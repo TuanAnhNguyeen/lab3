@@ -29,7 +29,9 @@ public class UploadFile extends HttpServlet {
         File photoFile = new File(file, photo.getSubmittedFileName());
         photo.write(photoFile.getAbsolutePath());
         System.out.println(photoFile);
-
+        System.out.println(1);
+        System.out.println(2);
+        System.out.println(3);
         Part read = req.getPart("readFile");
         File readFile = new File(file, read.getSubmittedFileName());
         read.write(readFile.getAbsolutePath());
